@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.6.final using JasperReports Library version 6.20.6-5c96b6aa8a39ac1dc6b6bea4b81168e16dd39231  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Especialidad" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isIgnorePagination="true" uuid="285ccff4-1770-4e24-8d13-d0227a1372d5">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DataAdapter.jrdax"/>
+	<parameter name="id" class="java.lang.Integer"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT*FROM especialidades]]>
+	</queryString>
+	<field name="IDEspecialidad" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="IDEspecialidad"/>
+		<property name="com.jaspersoft.studio.field.label" value="IDEspecialidad"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="especialidades"/>
+	</field>
+	<field name="Nombre" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Nombre"/>
+		<property name="com.jaspersoft.studio.field.label" value="Nombre"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="especialidades"/>
+	</field>
+	<field name="IDCentroMedico" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="IDCentroMedico"/>
+		<property name="com.jaspersoft.studio.field.label" value="IDCentroMedico"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="especialidades"/>
+	</field>
+	<field name="Cantidad" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="Cantidad"/>
+		<property name="com.jaspersoft.studio.field.label" value="Cantidad"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="especialidades"/>
+	</field>
+	<group name="IDEspecialidad">
+		<groupExpression><![CDATA[$F{IDEspecialidad}]]></groupExpression>
+	</group>
+	<columnHeader>
+		<band height="394">
+			<barChart>
+				<chart evaluationTime="Report">
+					<reportElement x="0" y="0" width="560" height="370" uuid="751d8f85-d72a-4ad6-a6b3-f280befb66ad"/>
+					<chartTitle/>
+					<chartSubtitle/>
+					<chartLegend/>
+				</chart>
+				<categoryDataset>
+					<categorySeries>
+						<seriesExpression><![CDATA["SERIES 1"]]></seriesExpression>
+						<categoryExpression><![CDATA[$F{Nombre}]]></categoryExpression>
+						<valueExpression><![CDATA[$F{Cantidad}]]></valueExpression>
+					</categorySeries>
+				</categoryDataset>
+				<barPlot>
+					<plot/>
+					<itemLabel/>
+					<categoryAxisFormat>
+						<axisFormat labelColor="#000000" tickLabelColor="#000000" axisLineColor="#000000"/>
+					</categoryAxisFormat>
+					<valueAxisFormat>
+						<axisFormat labelColor="#000000" tickLabelColor="#000000" axisLineColor="#000000"/>
+					</valueAxisFormat>
+				</barPlot>
+			</barChart>
+		</band>
+	</columnHeader>
+</jasperReport>

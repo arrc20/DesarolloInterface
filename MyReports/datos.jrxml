@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.6.final using JasperReports Library version 6.20.6-5c96b6aa8a39ac1dc6b6bea4b81168e16dd39231  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4_1" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ab7f3370-390d-4fef-8d10-3578f6304a59">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="nombre" class="java.lang.String"/>
+	<parameter name="apellido" class="java.lang.String"/>
+	<parameter name="fechanacimiento" class="java.lang.Integer"/>
+	<parameter name="lugardenacimiento" class="java.lang.String"/>
+	<parameter name="direccion" class="java.lang.String"/>
+	<parameter name="municipio" class="java.lang.String"/>
+	<parameter name="provincia" class="java.lang.String"/>
+	<parameter name="movil" class="java.lang.Integer"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="Nombre" class="java.lang.String"/>
+	<field name="Apellido" class="java.lang.String"/>
+	<field name="Fechanacimiento" class="java.lang.String"/>
+	<field name="Lugarnacimiento" class="java.lang.String"/>
+	<field name="Direccion" class="java.lang.String"/>
+	<field name="Municipio" class="java.lang.String"/>
+	<field name="Provincia" class="java.lang.String"/>
+	<field name="Movil" class="java.lang.Integer"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="52" splitType="Stretch">
+			<staticText>
+				<reportElement x="171" y="10" width="212" height="30" uuid="a01447c4-d636-422b-a2d8-c6ad85a322ab"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="24"/>
+				</textElement>
+				<text><![CDATA[Datos Familiares]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="750" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="50" width="100" height="30" uuid="1c3d8299-aedb-43d1-b866-306a3becfed7"/>
+				<text><![CDATA[Nombre]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="90" width="100" height="30" uuid="893b26c3-c850-48c0-b6fe-7456222ca0ff"/>
+				<text><![CDATA[Apellido]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="130" width="100" height="30" uuid="891ec1eb-20b4-4475-9e25-e3faf868d657"/>
+				<text><![CDATA[Fecha Nacimiento]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="170" width="100" height="30" uuid="34881f86-6638-41c9-bb71-feb537d0e142"/>
+				<text><![CDATA[Lugar de nacimiento]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="210" width="100" height="30" uuid="f9c0170e-788a-4bea-9586-71b077998a93"/>
+				<text><![CDATA[Dirección]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="250" width="100" height="30" uuid="19fb021a-531e-4b5f-a2d8-398e26f27781"/>
+				<text><![CDATA[Município]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="290" width="100" height="30" uuid="af9eeef5-6bc5-412a-a754-8017fd9ed6d5"/>
+				<text><![CDATA[Provincia]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="330" width="100" height="30" uuid="8d15ed7e-96d8-48b7-ba8f-14288a9cacb4"/>
+				<text><![CDATA[Móvil]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="220" y="726" width="80" height="19" uuid="f18ce75b-1b60-4df4-be6f-0d24392b457b"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="120" y="50" width="100" height="30" uuid="be88f896-0aab-4f71-8905-445f959f2b60"/>
+				<text><![CDATA[Paco]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="120" y="90" width="100" height="30" uuid="1ea01494-b0a2-4e68-be4e-e89aba18bbfe"/>
+				<text><![CDATA[Rodrigo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="120" y="130" width="100" height="30" uuid="2534551c-b4eb-4f64-8101-8fa4f2997c96"/>
+				<text><![CDATA[20/02/1990]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="120" y="170" width="100" height="30" uuid="29493bca-2f35-4ccc-adec-0e15b1f38dcb"/>
+				<text><![CDATA[Madrid]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="120" y="210" width="100" height="30" uuid="384bedb0-6cf6-4a2b-b56e-43fc9453bc4f"/>
+				<text><![CDATA[Calle B]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="120" y="250" width="100" height="30" uuid="326b396a-baa6-4f72-b773-132cebf3e6ff"/>
+				<text><![CDATA[Municipio B]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="120" y="290" width="100" height="30" uuid="2cb82222-c74a-4912-862c-d7291a370947"/>
+				<text><![CDATA[Provincia A]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="120" y="330" width="100" height="30" uuid="babb3a51-1913-4105-b226-fe156f44c1f9"/>
+				<text><![CDATA[67832456719]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="50" width="100" height="30" uuid="060eac70-218c-4387-945b-70c4f398c5e4"/>
+				<text><![CDATA[Nombre]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="90" width="100" height="30" uuid="68a7519b-c074-48c4-8948-dd8a3bfc3773"/>
+				<text><![CDATA[Apellido]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="130" width="100" height="30" uuid="209eb433-97ed-4c4d-ae29-b1eb015b027e"/>
+				<text><![CDATA[Fecha Nacimiento]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="170" width="100" height="30" uuid="e7d19668-0a14-49bb-a43d-e57078c5811a"/>
+				<text><![CDATA[Lugar de nacimiento]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="210" width="100" height="30" uuid="abba1b32-127f-4bb3-8f73-51a39293f797"/>
+				<text><![CDATA[Dirección]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="250" width="100" height="30" uuid="68265e0e-794a-4bb4-b617-16d759a88e70"/>
+				<text><![CDATA[Município]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="290" width="100" height="30" uuid="a69360a4-2675-477f-8d4d-c306a7126a6b"/>
+				<text><![CDATA[Provincia]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="330" width="100" height="30" uuid="355edcb3-574b-416b-83ac-37a4de91a770"/>
+				<text><![CDATA[Móvil]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="420" y="50" width="100" height="30" uuid="cc5167a9-5e2a-4ccf-be49-ed12c3c35fa9"/>
+				<text><![CDATA[Irene]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="420" y="90" width="100" height="30" uuid="0beeb7dd-2f37-4cfa-a27e-e817318a54a4"/>
+				<text><![CDATA[Rodrigo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="420" y="130" width="100" height="30" uuid="08fe4844-87bb-4d37-82f5-5585bea3c752"/>
+				<text><![CDATA[20/02/2009]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="420" y="170" width="100" height="30" uuid="5da33103-e8d5-4f2a-86b8-ce6b6ba6d175"/>
+				<text><![CDATA[Madrid]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="420" y="210" width="100" height="30" uuid="b4d1ebed-a623-4d41-8284-edad197a90b0"/>
+				<text><![CDATA[Calle B]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="420" y="250" width="100" height="30" uuid="a9c0bf9e-f1c6-4914-8f95-45829222df44"/>
+				<text><![CDATA[Municipio B]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="420" y="290" width="100" height="30" uuid="19a76b8a-9a1f-4434-ae0d-1ac3861dceff"/>
+				<text><![CDATA[Provincia A]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="420" y="330" width="100" height="30" uuid="0f85840b-8800-41b8-b9c5-5b150051f955"/>
+				<text><![CDATA[67832456719]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="420" width="100" height="30" uuid="2afe9c32-6a4d-41ac-84a7-f1b233fbcf50"/>
+				<text><![CDATA[Nombre]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="460" width="100" height="30" uuid="2bab0e09-ed87-46e3-a29c-b74f7b5fbce0"/>
+				<text><![CDATA[Apellido]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="500" width="100" height="30" uuid="2f0e0f83-a9ac-4809-84c0-2dde9268e3e7"/>
+				<text><![CDATA[Fecha Nacimiento]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="540" width="100" height="30" uuid="e719d7e3-6bb4-41e8-a766-03ea726bc360"/>
+				<text><![CDATA[Lugar de nacimiento]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="580" width="100" height="30" uuid="dea6f705-309e-4a29-bd38-f1d675e522a2"/>
+				<text><![CDATA[Dirección]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="620" width="100" height="30" uuid="a9a7c484-0127-4a47-8325-f2eb3bcc845b"/>
+				<text><![CDATA[Município]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="660" width="100" height="30" uuid="1356ba77-82b3-453d-9aa7-5cfa828ad722"/>
+				<text><![CDATA[Provincia]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="700" width="100" height="30" uuid="cf51691b-2b2b-45d1-b306-e8e3e061d9f4"/>
+				<text><![CDATA[Móvil]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="120" y="420" width="100" height="30" uuid="becd7e34-55bc-4610-b7ab-237faf5daa75"/>
+				<text><![CDATA[Marcarena]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="120" y="460" width="100" height="30" uuid="621f6f70-9a4d-4407-9895-f1043195de3d"/>
+				<text><![CDATA[Perez]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="120" y="500" width="100" height="30" uuid="29d747ee-7e0a-4a62-a4ae-d6a02fbf5a13"/>
+				<text><![CDATA[18/07/1990]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="120" y="540" width="100" height="30" uuid="efc4dfee-926a-4af0-a937-cac9c150f60e"/>
+				<text><![CDATA[Madrid]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="120" y="580" width="100" height="30" uuid="c45b3a20-b17a-4d42-aca9-e64a3d36a2da"/>
+				<text><![CDATA[Calle C]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="120" y="620" width="100" height="30" uuid="e88dc993-d42e-4acb-b544-507e95e35af6"/>
+				<text><![CDATA[Municipio B]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="120" y="660" width="100" height="30" uuid="d8a7c2b4-72cd-408e-bead-cc9711a4b40a"/>
+				<text><![CDATA[Provincia A]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="120" y="700" width="100" height="30" uuid="fb838e14-c24f-462b-b007-c0f7e2b8daf2"/>
+				<text><![CDATA[67832456719]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="420" width="100" height="30" uuid="e3a7b637-3510-4954-927d-9d84b725467d"/>
+				<text><![CDATA[Nombre]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="460" width="100" height="30" uuid="b8240869-90cb-4250-9713-6546d36f1a1b"/>
+				<text><![CDATA[Apellido]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="500" width="100" height="30" uuid="bf1b533c-62cc-4b74-870b-ef7e3fda61c8"/>
+				<text><![CDATA[Fecha Nacimiento]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="540" width="100" height="30" uuid="b9456ef6-23bb-414c-8bda-6148a5aedbb1"/>
+				<text><![CDATA[Lugar de nacimiento]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="580" width="100" height="30" uuid="921da85f-34d3-40b6-bf10-c5096bde5796"/>
+				<text><![CDATA[Dirección]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="620" width="100" height="30" uuid="bf2a0300-210c-4fb6-8a95-e46c69a55213"/>
+				<text><![CDATA[Município]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="660" width="100" height="30" uuid="5295034c-04d2-48b3-aedb-61d57110a7c6"/>
+				<text><![CDATA[Provincia]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="700" width="100" height="30" uuid="c2b0e00b-2956-4448-a8e5-af906e25a9a1"/>
+				<text><![CDATA[Móvil]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="420" y="420" width="100" height="30" uuid="66a2cf0c-202b-4e82-b255-9e9b3d242886"/>
+				<text><![CDATA[Marcos]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="420" y="460" width="100" height="30" uuid="a2cd82d7-0b1d-4ad5-88c4-bf035749f122"/>
+				<text><![CDATA[Rodrigo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="420" y="500" width="100" height="30" uuid="e9f03409-7be9-4162-a826-7cef100efb31"/>
+				<text><![CDATA[22/03/2010]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="420" y="540" width="100" height="30" uuid="2e1a1b57-cbe7-4f72-91c1-50f73e2fcd06"/>
+				<text><![CDATA[Madrid]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="420" y="580" width="100" height="30" uuid="9c757456-3e65-4c98-834e-0514b844998d"/>
+				<text><![CDATA[Calle B]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="420" y="620" width="100" height="30" uuid="f6fa3bc9-118e-4232-9e12-9ff48b2ca72e"/>
+				<text><![CDATA[Municipio B]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="420" y="660" width="100" height="30" uuid="3db8e4a5-43a2-4587-8d55-ee7e1959faf9"/>
+				<text><![CDATA[Provincia A]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="420" y="700" width="100" height="30" uuid="06c245e4-711e-41a0-a4b1-d14f69f67235"/>
+				<text><![CDATA[67832456719]]></text>
+			</staticText>
+			<line>
+				<reportElement x="-20" y="380" width="595" height="30" uuid="e374e490-ea15-4015-84cf-d2d9253a5145"/>
+			</line>
+		</band>
+	</columnHeader>
+</jasperReport>

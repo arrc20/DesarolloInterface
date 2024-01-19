@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.6.final using JasperReports Library version 6.20.6-5c96b6aa8a39ac1dc6b6bea4b81168e16dd39231  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Centro" pageWidth="595" pageHeight="862" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isIgnorePagination="true" uuid="3c8b6be1-7c01-4253-bf34-a629136160fa">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DataAdapter.jrdax"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<queryString>
+		<![CDATA[SELECT * FROM centromedico]]>
+	</queryString>
+	<field name="IDCentroMedico" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="IDCentroMedico"/>
+		<property name="com.jaspersoft.studio.field.label" value="IDCentroMedico"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="centromedico"/>
+	</field>
+	<field name="Nombre" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Nombre"/>
+		<property name="com.jaspersoft.studio.field.label" value="Nombre"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="centromedico"/>
+	</field>
+	<field name="Provincia" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Provincia"/>
+		<property name="com.jaspersoft.studio.field.label" value="Provincia"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="centromedico"/>
+	</field>
+	<field name="Municipio" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Municipio"/>
+		<property name="com.jaspersoft.studio.field.label" value="Municipio"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="centromedico"/>
+	</field>
+	<field name="Localidad" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Localidad"/>
+		<property name="com.jaspersoft.studio.field.label" value="Localidad"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="centromedico"/>
+	</field>
+	<field name="CP" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="CP"/>
+		<property name="com.jaspersoft.studio.field.label" value="CP"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="centromedico"/>
+	</field>
+	<field name="Calle" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Calle"/>
+		<property name="com.jaspersoft.studio.field.label" value="Calle"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="centromedico"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="570" splitType="Stretch">
+			<image>
+				<reportElement x="430" y="20" width="130" height="90" uuid="1c465c8a-f886-4fdb-9919-cfb61dd24259"/>
+				<imageExpression><![CDATA["C:/Users/Usuario/Downloads/descarga.jpg"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="-10" y="15" width="91" height="102" uuid="a9b54da5-a17f-410a-a534-f248f8f9fd87"/>
+				<imageExpression><![CDATA["C:/Users/Usuario/Downloads/descarga.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="81" y="30" width="349" height="60" uuid="daef82f9-705f-40e3-9445-0f5d7e6d601d"/>
+				<textElement textAlignment="Center">
+					<font size="20"/>
+				</textElement>
+				<text><![CDATA[“REPUBLICA INDEPENDIENTE DE MI CASA”]]></text>
+			</staticText>
+			<subreport>
+				<reportElement x="20" y="130" width="200" height="200" uuid="c1be95a7-9de8-45ed-a431-a0e1e5302b7e"/>
+				<subreportParameter name="id">
+					<subreportParameterExpression><![CDATA[$F{IDCentroMedico}]]></subreportParameterExpression>
+				</subreportParameter>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA["CentroMedico.jasper"]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement x="20" y="340" width="200" height="200" uuid="34d27c3c-18be-4227-9c2f-a7f0da879882"/>
+				<subreportParameter name="id">
+					<subreportParameterExpression><![CDATA[$F{IDCentroMedico}]]></subreportParameterExpression>
+				</subreportParameter>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA["Especialidad.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="252">
+			<subreport>
+				<reportElement x="20" y="20" width="200" height="200" uuid="dbe7f0a6-9ee8-4fda-a6b4-5061f345847e"/>
+				<subreportParameter name="id">
+					<subreportParameterExpression><![CDATA[$F{IDCentroMedico}]]></subreportParameterExpression>
+				</subreportParameter>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA["Urgencias.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</columnHeader>
+</jasperReport>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.6.final using JasperReports Library version 6.20.6-5c96b6aa8a39ac1dc6b6bea4b81168e16dd39231  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="CentroMedico" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="b13ce4fc-dec0-425c-9b5c-8b7e7817ad78">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DataAdapter.jrdax"/>
+	<parameter name="id" class="java.lang.Integer"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM centromedico]]>
+	</queryString>
+	<field name="IDCentroMedico" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="IDCentroMedico"/>
+		<property name="com.jaspersoft.studio.field.label" value="IDCentroMedico"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="centromedico"/>
+	</field>
+	<field name="Nombre" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Nombre"/>
+		<property name="com.jaspersoft.studio.field.label" value="Nombre"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="centromedico"/>
+	</field>
+	<field name="Provincia" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Provincia"/>
+		<property name="com.jaspersoft.studio.field.label" value="Provincia"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="centromedico"/>
+	</field>
+	<field name="Municipio" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Municipio"/>
+		<property name="com.jaspersoft.studio.field.label" value="Municipio"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="centromedico"/>
+	</field>
+	<field name="Localidad" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Localidad"/>
+		<property name="com.jaspersoft.studio.field.label" value="Localidad"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="centromedico"/>
+	</field>
+	<field name="CP" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="CP"/>
+		<property name="com.jaspersoft.studio.field.label" value="CP"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="centromedico"/>
+	</field>
+	<field name="Calle" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Calle"/>
+		<property name="com.jaspersoft.studio.field.label" value="Calle"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="centromedico"/>
+	</field>
+	<group name="IDCentroMedico">
+		<groupExpression><![CDATA[$F{IDCentroMedico}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="271" splitType="Stretch">
+			<textField>
+				<reportElement x="277" y="20" width="280" height="30" uuid="b74410fe-6993-4dcd-a13e-2163c79261a6">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c3459e53-21f7-4bdf-8214-05770506ec19"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{IDCentroMedico}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="279" y="60" width="280" height="30" uuid="4ebffa10-ed70-4bbe-a1a0-b4a8e61b8954">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8ae8d9ba-7e07-45da-a1cc-86bbb508ad4c"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{Nombre}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="60" width="279" height="30" uuid="99b53956-8800-4c18-8d4b-81abde4e50f7">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8ae8d9ba-7e07-45da-a1cc-86bbb508ad4c"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nombre]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="20" width="280" height="30" uuid="ac249ab9-a9cf-4428-b12d-ab918140bd7d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c3459e53-21f7-4bdf-8214-05770506ec19"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[IDCentroMedico]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="279" y="100" width="278" height="30" uuid="093c178d-be23-42d8-96a6-f3ce96d7dc67">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b5611848-7714-44c0-9239-ffb54cb0e857"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{Provincia}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="100" width="280" height="30" uuid="b9c7f538-117a-43d2-9a36-866f543ad8c1">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b5611848-7714-44c0-9239-ffb54cb0e857"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Provincia]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="280" y="139" width="276" height="30" uuid="ef69bbac-0862-4248-9d27-f3483267d8c4">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b5261523-6ce7-4018-96ea-4d8c684dcd26"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{Municipio}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="139" width="279" height="30" uuid="dc1eb954-f317-472a-8238-40f1ea0798ce">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b5261523-6ce7-4018-96ea-4d8c684dcd26"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Municipio]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="280" y="180" width="275" height="30" uuid="c31ef847-6f2b-4f08-bbf5-0ab6a96d219f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="396947ec-4b6d-4ee6-ac5c-5336cb99563c"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{CP}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="179" width="280" height="30" uuid="caea8ec6-51c2-47eb-bbe7-88b3570028cc">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="396947ec-4b6d-4ee6-ac5c-5336cb99563c"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CP]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="279" y="220" width="275" height="30" uuid="a23a7d75-17f7-4dd8-8d5a-a33abcdcc48c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e5056cd8-b003-4138-b70e-36d1a225170e"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{Calle}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="220" width="280" height="30" uuid="3f0bb7a9-a35f-41d1-8d5f-5adfc5e41964">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e5056cd8-b003-4138-b70e-36d1a225170e"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Calle]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>
